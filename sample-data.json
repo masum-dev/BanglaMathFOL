@@ -1,0 +1,179 @@
+[
+    {
+        "id": "bmf-01",
+        "bn_text": "প্রত্যেক জোড় সংখ্যা ২ দ্বারা বিভাজ্য।",
+        "en_text": "Every even number is divisible by 2.",
+        "domain": "number_theory",
+        "predicate_vocab": {
+            "E(x)": "x is even",
+            "D(x,y)": "x is divisible by y"
+        },
+        "fol_reference": "∀x (E(x) → D(x,2))",
+        "phenomenon_tags": ["Q-UNIV", "IMPL-DEF"],
+        "contrast_pair_id": null,
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    },
+    {
+        "id": "bmf-02",
+        "bn_text": "অন্তত একটি মৌলিক সংখ্যা জোড়।",
+        "en_text": "At least one prime number is even.",
+        "domain": "number_theory",
+        "predicate_vocab": {
+            "P(x)": "x is prime",
+            "E(x)": "x is even"
+        },
+        "fol_reference": "∃x (P(x) ∧ E(x))",
+        "phenomenon_tags": ["Q-EXIST"],
+        "contrast_pair_id": null,
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    },
+    {
+        "id": "bmf-03",
+        "bn_text": "প্রত্যেক পূর্ণসংখ্যা x-এর জন্য এমন একটি পূর্ণসংখ্যা y আছে যেন x < y।",
+        "en_text": "For every integer x there is an integer y with x < y.",
+        "domain": "number_theory",
+        "predicate_vocab": {
+            "L(x,y)": "x < y"
+        },
+        "fol_reference": "∀x ∃y L(x,y)",
+        "phenomenon_tags": ["Q-ORDER"],
+        "contrast_pair_id": "pair-01",
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    },
+    {
+        "id": "bmf-04",
+        "bn_text": "এমন একটি পূর্ণসংখ্যা y আছে যেন প্রত্যেক পূর্ণসংখ্যা x-এর জন্য x < y।",
+        "en_text": "There is an integer y such that every integer x satisfies x < y.",
+        "domain": "number_theory",
+        "predicate_vocab": {
+            "L(x,y)": "x < y"
+        },
+        "fol_reference": "∃y ∀x L(x,y)",
+        "phenomenon_tags": ["Q-ORDER"],
+        "contrast_pair_id": "pair-01",
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    },
+    {
+        "id": "bmf-05",
+        "bn_text": "এটি সত্য নয় যে সব মৌলিক সংখ্যা বিজোড়।",
+        "en_text": "It is not the case that all primes are odd.",
+        "domain": "number_theory",
+        "predicate_vocab": {
+            "P(x)": "x is prime",
+            "O(x)": "x is odd"
+        },
+        "fol_reference": "¬∀x (P(x) → O(x))",
+        "phenomenon_tags": ["NEG-SCOPE"],
+        "contrast_pair_id": "pair-02",
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    },
+    {
+        "id": "bmf-06",
+        "bn_text": "কোনো মৌলিক সংখ্যা বিজোড় নয়।",
+        "en_text": "No prime number is odd.",
+        "domain": "number_theory",
+        "predicate_vocab": {
+            "P(x)": "x is prime",
+            "O(x)": "x is odd"
+        },
+        "fol_reference": "∀x (P(x) → ¬O(x))",
+        "phenomenon_tags": ["NEG-SCOPE", "Q-ANY"],
+        "contrast_pair_id": "pair-02",
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    },
+    {
+        "id": "bmf-07",
+        "bn_text": "একটি পূর্ণসংখ্যা জোড় হবে যদি এবং কেবল যদি তা ২ দ্বারা বিভাজ্য হয়।",
+        "en_text": "An integer is even if and only if it is divisible by 2.",
+        "domain": "number_theory",
+        "predicate_vocab": {
+            "E(x)": "x is even",
+            "D(x,y)": "x is divisible by y"
+        },
+        "fol_reference": "∀x (E(x) ↔ D(x,2))",
+        "phenomenon_tags": ["IFF", "IMPL-DEF"],
+        "contrast_pair_id": null,
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    },
+    {
+        "id": "bmf-08",
+        "bn_text": "যেকোনো x, y-এর জন্য, যদি x R y হয়, তবে y R x হয়।",
+        "en_text": "For any x, y, if x R y then y R x.",
+        "domain": "discrete_mathematics",
+        "predicate_vocab": {
+            "R(x,y)": "x is related to y"
+        },
+        "fol_reference": "∀x ∀y (R(x,y) → R(y,x))",
+        "phenomenon_tags": ["IMPL-DEF", "Q-UNIV"],
+        "contrast_pair_id": null,
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    },
+    {
+        "id": "bmf-09",
+        "bn_text": "যেকোনো a, b ∈ A-এর জন্য, যদি f(a) = f(b) হয়, তবে a = b।",
+        "en_text": "For any a, b in A, if f(a) = f(b) then a = b.",
+        "domain": "discrete_mathematics",
+        "predicate_vocab": {
+            "A(x)": "x is in A",
+            "f": "function symbol"
+        },
+        "fol_reference": "∀a ∀b ((A(a) ∧ A(b) ∧ f(a) = f(b)) → a = b)",
+        "phenomenon_tags": ["IMPL-DEF", "COORD"],
+        "contrast_pair_id": null,
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    },
+    {
+        "id": "bmf-10",
+        "bn_text": "কোনো পূর্ণসংখ্যার বর্গ ঋণাত্মক হয় না।",
+        "en_text": "The square of any integer is not negative.",
+        "domain": "number_theory",
+        "predicate_vocab": {
+            "N(x)": "x is negative",
+            "sq(x)": "x squared"
+        },
+        "fol_reference": "∀x ¬N(sq(x))",
+        "phenomenon_tags": ["Q-ANY", "NEG-SCOPE"],
+        "contrast_pair_id": null,
+        "validation": {
+            "annotator_1": "draft",
+            "annotator_2": "pending",
+            "adjudicated": false
+        }
+    }
+]
